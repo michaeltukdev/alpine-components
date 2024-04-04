@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="bg-background">
+
+    <div class="flex items-center justify-center w-screen h-screen gap-2">
+        <div x-data="{ tooltipOpen: false }" class="relative flex justify-center">
+            <button @mouseenter="tooltipOpen = true" @mouseleave="tooltipOpen = false" class="px-4 py-2 text-black rounded-md bg-primary">Hover Tooltip</button>
+    
+            <div x-cloak x-transition x-show="tooltipOpen" @click.away="tooltipOpen = false" class="absolute z-10 p-2 text-sm text-white rounded-lg shadow-lg bg-container -top-12">
+                This is a tooltip!
+                <div class="absolute w-2 h-2 transform rotate-45 -translate-x-1/2 shadow-lg bg-container -bottom-1 left-1/2"></div>
+            </div>
+        </div>
+
+
+
+
+        <div x-data="{ tooltipOpen: false }" class="relative flex justify-center">
+            <button @click="tooltipOpen = true" @mouseleave="tooltipOpen = false" class="px-4 py-2 text-black rounded-md bg-primary">Click Tooltip</button>
+    
+            <div x-cloak x-transition x-show="tooltipOpen" @click.away="tooltipOpen = false" class="absolute z-10 p-2 text-sm text-white rounded-lg shadow-lg bg-container -top-12">
+                This is a tooltip!
+                <div class="absolute w-2 h-2 transform rotate-45 -translate-x-1/2 shadow-lg bg-container -bottom-1 left-1/2"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
