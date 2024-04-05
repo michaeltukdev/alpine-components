@@ -8,10 +8,17 @@ They are made using AlpineJS and Tailwind but it wouldn't be difficult for you t
 
 You are free to use them in whatever project and whatever way you want.
 
-# Component List
+# Component List & Preview
 
-Popup Modal
-Hover & Click Tooltips
+<details>
+    <summary>Popup Modal</summary>
+    <p align="center"><img src="https://i.imgur.com/SkuZTCU.gif" alt="Modal"></p>
+</details>
+
+<details>
+    <summary>Tooltips</summary>
+    <p align="center"><img src="https://i.imgur.com/R9xd2qs.gif" alt="Tooltips"></p>
+</details>
 
 # Dependencies
 
