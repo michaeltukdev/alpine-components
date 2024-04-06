@@ -20,6 +20,12 @@ You are free to use them in whatever project and whatever way you want.
     <p align="center"><img src="https://i.imgur.com/R9xd2qs.gif" alt="Tooltips"></p>
 </details>
 
+<details>
+    <summary>Alertr</summary>
+    <p align="center"><img src="https://i.imgur.com/YHBNCva.gif" alt="Alerts"></p>
+</details>
+
+
 # Dependencies
 
 [Tailwind](https://tailwindcss.com/)
