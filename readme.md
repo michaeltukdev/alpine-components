@@ -30,6 +30,11 @@ You are free to use them in whatever project and whatever way you want.
     <p align="center"><img src="https://i.imgur.com/W6ALAME.gif" alt="Context Menu"></p>
 </details>
 
+<details>
+    <summary>Tag Input</summary>
+    <p align="center"><img src="https://i.imgur.com/PBlsZa7.gif" alt="Tag Input"></p>
+</details>
+
 
 # Dependencies
 

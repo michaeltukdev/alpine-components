@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="bg-background">
+
+    <div class="flex items-center justify-center h-screen vw-full">
+        <div class="w-full max-w-md" x-data="{ tags: [], tag: '' }">
+            <form @submit.prevent="if (tag.trim() !== '') { tags.push(tag); tag = ''; }">
+                <div class="relative flex items-center">
+                    <input min="1" @keyup.enter="if (tag.trim() !== '') { tags.push(tag); tag = ''; }" x-model="tag" placeholder="Enter a tag..." type="text" class="w-full py-2 pl-4 pr-10 text-sm text-white rounded-l-lg outline-none bg-container">
+                    <button type="button" @click="if (tag.trim() !== '') { tags.push(tag); tag = ''; }" class="flex items-center justify-center px-3 py-2 text-sm text-white transition rounded-r-lg bg-input hover:bg-inputBorder">
+                        <svg class="w-4 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+    
+            <ul x-cloak x-show="tags.length" class="flex flex-wrap mt-2">
+                <template x-for="(tag, index) in tags" :key="index">
+                    <li @mouseenter.self="show = true" @mouseleave.self="show = false" class="relative flex items-center px-4 py-1 m-1 text-xs text-white border rounded-md border-primary w-fit bg-primary bg-opacity-40" x-data="{ show: false }">
+                        <span x-text="tag"></span>
+                        <button x-show="show" @click="tags.splice(index, 1)" class="absolute flex items-center justify-center w-4 h-4 ml-2 text-white bg-red-500 rounded-full -right-2 -top-2 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3">
+                                <path d="M10 8.586l-2.293-2.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 101.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293a1 1 0 00-1.414-1.414L10 8.586z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </template>
+            </ul>            
+        </div>
+    </div>    
+    
+    
+</body>
+
+</html>
