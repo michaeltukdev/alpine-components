@@ -35,6 +35,11 @@ You are free to use them in whatever project and whatever way you want.
     <p align="center"><img src="https://i.imgur.com/PBlsZa7.gif" alt="Tag Input"></p>
 </details>
 
+<details>
+    <summary>Password</summary>
+    <p align="center"><img src="https://i.imgur.com/q8MtCpY.gif" alt="Password"></p>
+</details>
+
 
 # Dependencies
 
