@@ -40,6 +40,11 @@ You are free to use them in whatever project and whatever way you want.
     <p align="center"><img src="https://i.imgur.com/q8MtCpY.gif" alt="Password"></p>
 </details>
 
+<details>
+    <summary>Slide Popup Modal</summary>
+    <p align="center"><img src="https://i.imgur.com/ty8GKfc.gif" alt="Slide Popup"></p>
+</details>
+
 
 # Dependencies
 
